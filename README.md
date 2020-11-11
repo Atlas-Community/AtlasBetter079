@@ -9,6 +9,6 @@ AtlasBetter079 n'est pas maintenu. Si vous désirez soumettre un pull request, l
 
 Licence
 ----
-Apache License 2.0
+MIT
 
 Créé par [Antt0n](https://t.me/Antt0n).
