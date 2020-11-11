@@ -9,6 +9,6 @@ AtlasBetter079 n'est pas maintenu. Si vous désirez soumettre un pull request, l
 
 Licence
 ----
-MIT
+MIT (https://github.com/VirtualBrightPlayz/EXILEDBetter079)
 
 Créé par [Antt0n](https://t.me/Antt0n).
