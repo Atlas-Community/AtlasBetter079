@@ -2,13 +2,8 @@
 
 AtlasBetter079 vous permet d'enrichir l'expérience de SCP-079.
 
-### Informations importantes
-
-AtlasBetter079 n'est pas maintenu. Si vous désirez soumettre un pull request, libre à vous de le faire. 
-**AtlasBetter079 ne fonctionne certainement pas avec les versions d'EXILED supérieurs à 1.10**.
-
 Licence
 ----
 MIT (https://github.com/VirtualBrightPlayz/EXILEDBetter079)
 
-Créé par [Antt0n](https://t.me/Antt0n).
+Créé par [Antt0n](https://t.me/Antt0n) mis à jour par [wakonda](https://github.com/wakonda56)
