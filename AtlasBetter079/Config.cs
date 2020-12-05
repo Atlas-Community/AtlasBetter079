@@ -56,8 +56,8 @@ namespace AtlasBetter079
         {
             PowerCost = 20f,
             RequiredTier = 1,
-            HelpMessage = "Aveugle les adversaires regardant votre caméra actuelle",
-            CommandExecutedMessage = "",
+            HelpMessage = "Aveugle les adversaires regardant votre caméra",
+            CommandExecutedMessage = "Flash activé !",
             Cooldown = 10f
         };
         
@@ -82,8 +82,8 @@ namespace AtlasBetter079
             BlackoutDuration = 10f,
             Cooldown = 30f,
             GainedExperience = 5,
-            HelpMessage = "Coupe la lumière pour %time secondes",
-            CommandExecutedMessage = "Blackout en cours."
+            HelpMessage = "Vous permet de faire un blackout",
+            CommandExecutedMessage = "Blackout en cours ..."
         };
 
         [Description("The A5 command (ultimate)")]
@@ -92,9 +92,9 @@ namespace AtlasBetter079
             PowerCost = 150f,
             RequiredTier = 4,
             TierCost = 2,
-            CommandExecutedMessage = "Ouverture du confinement en cours !",
+            CommandExecutedMessage = "Ouverture du confinement en cours ...",
             NoSpectatorMessage = "Aucun spectateur de trouvé",
-            NoRemainingScpMessage = "Il ne reste aucun SCP à déconfiner",
+            NoRemainingScpMessage = "Il ne reste plus aucun SCP à déconfiner",
             HelpMessage = "Libère un nouveau SCP aléatoire",
         };
     }
