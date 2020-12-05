@@ -1,6 +1,8 @@
 using System;
 using CommandSystem;
 using Exiled.API.Features;
+using Respawning;
+using Respawning.NamingRules;
 
 namespace AtlasBetter079.Commands
 {
@@ -12,33 +14,18 @@ namespace AtlasBetter079.Commands
 
         public string Description { get; } = AtlasBetter079Plugin.Singleton.Config.A1.RespawnSubcommand.HelpMessage;
 
-        private string _help = $"syntax: {AtlasBetter079Plugin.Singleton.Config.CommandPrefix} a1 respawn <team>\n" +
-            "Possible teams: ci/mtf";
 
         public bool Execute(ArraySegment<string> arguments, ICommandSender sender, out string response)
         {
             if (!AtlasBetter079Plugin.Before(sender, this, out Player player, out response))
                 return false;
             
-            if (arguments.Count < 1)
-            {
-                response = this._help;
-                return true;
-            }
-
-            switch (arguments.Array[0])
-            {
-                // TODO
-                case "ci":
-                    break;
-                
-                case "mtf":
-                    break;
-                
-                default:
-                    response = this._help;
-                    return true;
-            }
+            response = AtlasBetter079Plugin.Singleton.Config.ErrorMessage;
+            if (!UnitNamingRules.TryGetNamingRule(SpawnableTeamType.NineTailedFox, out UnitNamingRule rule))
+                return false;
+            
+            rule.GenerateNew(SpawnableTeamType.NineTailedFox, out string regular);
+            rule.PlayEntranceAnnouncement(regular);
 
             AtlasBetter079Plugin.After(player, this);
 

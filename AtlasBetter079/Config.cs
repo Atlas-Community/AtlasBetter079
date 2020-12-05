@@ -40,7 +40,7 @@ namespace AtlasBetter079
             GainedExperience = 10,
             RespawnSubcommand = new CommandBase()
             {
-                HelpMessage = "Annonce un faux respawn", 
+                HelpMessage = "Annonce un respawn MTF", 
             },
             ScpDeathSubcommand = new CommandBase()
             {

@@ -59,10 +59,27 @@ namespace AtlasBetter079
         {
             switch (cmd)
             {
-                // TODO
                 case SuicideCommand ignored1:
                     return AtlasBetter079Plugin.Singleton.Config.Suicide;
                 
+                case RespawnAnnouncementSubcommand ignored2:
+                    return AtlasBetter079Plugin.Singleton.Config.A1;
+                
+                case ScpDeathAnnouncementSubcommand ignored3:
+                    return AtlasBetter079Plugin.Singleton.Config.A1;
+                
+                case A2Command ignored4:
+                    return AtlasBetter079Plugin.Singleton.Config.A2;
+                
+                case A3Command ignored5:
+                    return AtlasBetter079Plugin.Singleton.Config.A3;
+                
+                case A4Command ignored6:
+                    return AtlasBetter079Plugin.Singleton.Config.A4;
+                
+                case A5Command ignored7:
+                    return AtlasBetter079Plugin.Singleton.Config.A5;
+
                 default:
                     return null;
             }
